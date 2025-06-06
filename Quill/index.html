@@ -4,6 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h1 {
+            text-decoration: underline;
+            font-style: italic;
+            font-size: 30px;
+            text-align: center;
+            transform: matrix(2, 0, 0, 2, 0, 0);
+            text-transform: uppercase;
+            text-shadow: 1px 1px blue, 1px 1px gold;
+            animation: 3s ease 0s infinite running colorchange;
+           }
+        @keyframes colorchange{
+    0%{background-color: gray;}
+    20%{background-color: green;}
+    40%{background-color: blueviolet;}
+    60%{background-color: blue;}
+    80%{background-color: gold;}
+    100%{background-color: sienna;}
+}
+        body {
+            background: linear-gradient(blue,blueviolet,violet);
+        }
+        a:link{
+        color: chocolate;
+        font-size: 20px;
+        }
+        a:visited{
+        color: red;
+        }
+        a:hover{
+        color: gold;
+        }
+        a:active{
+        color: blueviolet;
+        } 
+        h2 {
+            font-size: 40px;
+            font-weight: bolder;
+            font-style: italic;
+            text-align: center;
+            color: white;
+            
+        }
+        span {
+            color: red;
+            font-weight: 1000;
+            text-decoration: underline;
+            text-shadow: 0px 0px 2px black, 0px 2px 0px orange;
+        }
+        h3 {
+            font-size: 30px;
+            font-weight: bold;
+            font-style: oblique;
+            text-align: center;
+            color: black;
+            text-decoration: underline;
+        }
+        p {
+            font-size: 20px;
+
+        }
+        #img1 {
+            display: block;
+            margin: auto;
+            width: 20%;
+        }
+
+    </style>
 </head>
 <body>
     
@@ -17,10 +85,10 @@
         <li><a href="register.html">Register</a></li>
     </ul>
     </nav>
-
+ <br>
      <!--HERO SECTION  -->
     <section>
-    <h1><span>Mindful living</span> for the <br> digital world 📱</h1>
+    <h1><span>Mindful living</span> for the <br> digital world 📱</h1><br>
     <p>The ultimate bullet journal app to document, reflect, and embrace your personal journey</p>
     <ul>
         <li><a href="register.html">Get Started</a></li>
@@ -38,19 +106,19 @@
     <div>
     <h3>Write all your journals in a few clicks</h3>
     <p>Unlock the simplicity of online journaling - say goodbye to the hassle of pen and paper and hello to effortless journaling with just a few clicks.</p>
-    <img src="images/features-1.png" alt="Simple online journaling" width="300px">
+    <img id="img1" src="images/features-1.png" alt="Simple online journaling" width="300px">
     </div>
 
     <div>
     <h3>Beautifully displayed and neatly organized</h3>
     <p>Not just words on a screen - our journals are beautifully displayed and neatly organised.</p>
-    <img src="images/features-2.png" alt="beautifully displayed journals" width="300px">
+    <img id="img1" src="images/features-2.png" alt="beautifully displayed journals" width="300px">
     </div>
 
     <div>
     <h3>Create and reflect from anywhere in the world</h3>
     <p>Whether you're at home or exploring the far corners of the world, create and reflect on your experiences, thoughts, and emotions from anywhere on the globe.</p>
-    <img src="images/features-3.png" alt="create journals anywhere" width="300px">
+    <img id="img1" src="images/features-3.png" alt="create journals anywhere" width="300px">
     </div>
 </section>
 

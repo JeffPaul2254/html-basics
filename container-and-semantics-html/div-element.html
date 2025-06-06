@@ -4,18 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h1 {
+            text-decoration: underline;
+            font-style: italic;
+            font-size: 50px;
+            text-align: center;
+            transform: matrix(2, 0, 0, 2, 0, 0);
+            text-transform: uppercase;
+            text-shadow: 0px 0px 5px aqua, 0px 7px 0px blue;
+        }
+        #p1 {
+            font-size: 40px;
+            text-align: center;
+            transform: matrix(1, 0, 0, 1, 0, 0);
+            text-transform: uppercase;
+            font-weight: bold;
+            color: aqua;
+
+        }
+        body {
+            background-image: url("browser.jpg");
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;        
+        }
+        a {
+            font-size: 50px;
+            margin-left: 220px;
+            
+        }
+        
+
+    </style>
 </head>
 <body>
-    <h1>Heading</h1>
-    <p>Paragraph</p>
+    <h1>Links</h1>
+    <p id="p1">Different Links</p>
 
     <div>
-    <a href="https://www.google.com/">Link 1</a>
-    <a href="https://www.google.com/">Link 2</a>
+    <a id="a1" href="https://www.google.com/">GOOGLE</a><br>
+    <a id="a2" href="https://search.brave.com/">BRAVE</a>
     </div>
-    <div>
-    <a href="https://www.google.com/">Link 3</a>
-    <a href="https://www.google.com/">Link 4</a>
+
+    <a id="a3" href="https://www.mozilla.org/en-US/firefox/new/">FIREFOX</a><br>
+    <a id="a4" href="https://www.opera.com/">OPERA</a>
     </div>
 
 </body>

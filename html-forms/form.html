@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        h1 {
+            text-decoration: underline;
+            font-style: italic;
+            font-size: 30px;
+            text-align: center;
+            transform: matrix(2, 0, 0, 2, 0, 0);
+            text-transform: uppercase;
+            text-shadow: 1px 1px gold, 1px 1px silver;
+            animation: 3s ease 0s infinite running slide;
+           }
+        @keyframes slide{
+        from{margin-left: 100%;}
+        to{margin-left: 0%;}
+        }
+        label {
+            font-size: 20px;
+            font-weight: bolder;
+            color: black;
+        }
+        #search-bar {
+            background-color: yellow;
+            font-size: 20px;
+        }
+        #journal-catagory {
+            background-color: yellow;
+            font-size: 20px;
+        }
+        button:hover{
+            background-color: gold;
+        }
+        button {
+        font-size: large;
+        }
+        body {
+            background-image: url("journal.jpg");
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+    </style>
+</head>
+<body>
+    <h1>JOURNAL</h1> <br><br>
+    <form action="/api/v1/journals" method="get">
+        <label for="search-bar">Search:  </label>
+        <input type="text" name="search" id="search-bar" placeholder="Search Journal">
+
+        <br><br>
+
+        <label for="journal-catagory">Journal Catagory</label>
+        <select name="catagory" id="journal-catagory">
+            <option value="idea">Idea</option>
+            <option value="task">Task</option>
+            <option value="memory">Memory</option>
+        </select>
+          
+        <button type="submit">Submit</button>
+        
+    </form>
+</body>
+</html>

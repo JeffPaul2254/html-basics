@@ -3,8 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Journal
-    </title>
+    <title>Create Journal </title>
+    <style>
+        h1 {
+            text-decoration: underline;
+            font-style: italic;
+            font-size: 30px;
+            text-align: center;
+            transform: matrix(2, 0, 0, 2, 0, 0);
+            text-transform: uppercase;
+            text-shadow: 1px 1px red, 1px 1px gold;
+            animation: 3s ease 0s infinite running opacity;
+           }
+        @keyframes opacity{
+        100%{opacity: 0;}
+        }
+        button:hover{
+            background-color: gold;
+        }
+        body {
+            background-image: url("journal1.jpg");
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        label {
+            font-size: 20px;
+            font-weight: bolder;
+            color: black;
+        }
+        #main-title {
+            background-color: gold;
+            font-size: 20px;
+        }
+        #journal-catagory {
+            background-color: gold;
+            font-size: 20px;
+        }
+        button:hover{
+            background-color: red;
+        }
+        button {
+        font-size: large;
+        }
+        textarea {
+            background-color: gold;
+        }
+        
+    </style>
 </head>
 <body>
     <h1>Create Journal</h1>
@@ -15,7 +61,7 @@
          <label for="main-title">Journal Title: </label>
          <input id="main-title" type="text" name="title" placeholder="Enter title" minlength="3" required>
 
-         <br> 
+         <br> <br>
          
          <label for="journal-catagory">Journal Catagory</label>
          <select name="Catagory" id="journal-catagory" required>
@@ -29,12 +75,12 @@
             <option value="event">Event</option>
          </select>
 
-         <br> 
+         <br> <br>
 
-         <label for="journal-entry">Journal Entry: </label>
-         <textarea name="entry" id="journal-entry" rows="5" cols="30" minlength="10" required></textarea>
+         <label for="journal-entry">Journal Entry: </label><br><br>
+         <textarea name="entry" id="journal-entry" rows="5" cols="30" minlength="10" placeholder="WHat are your thoughts?...." required></textarea>
 
-         <br>
+         <br> <br>
 
          <button type="submit">Submit</button>
     </form>

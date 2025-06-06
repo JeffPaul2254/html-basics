@@ -4,19 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        h2 {
+            text-decoration: underline;
+            font-style: italic;
+            font-size: 30px;
+            text-align: center;
+            transform: matrix(2, 0, 0, 2, 0, 0);
+            text-transform: uppercase;
+            text-shadow: 1px 1px red, 1px 1px gold;
+        }
+        label {
+            font-size: 30px;
+            margin-left: 10px;
+            font-style: italic;
+            background-color:aqua;
+        }
+        button:hover{
+            background-color: blue;
+        }
+        button {
+        font-size: large;
+        }
+        body {
+        background-image: url("choices.jpg");
+        background-position: center;
+        background-size: cover;
+         background-attachment: fixed;
+        }
+    </style>
 </head>
 <body>
-    <h2>CheckBox</h2>
+    <h2>Check Box</h2>
     <form action="/food/pizza" method="post">
     <input type= "checkbox" id="topping-1" name="pineapple">
     <label for="topping-1">pineapple</label>
-
+     <br>
     <input type= "checkbox" id="topping-2" name="corn">
     <label for="topping-2">Corn</label>
-
+     <br>
     <input type= "checkbox" id="topping-3" name="olives">
     <label for="topping-3">Olives</label>
-    
+    <br><br>
     <button type="submit">Submit</button>
     </form>
 
@@ -24,14 +53,13 @@
     <form action="/clothing/shirts" method="post">
     <input type= "radio" id="small" name="size">
     <label for="small">small</label>
-
+    <br>
     <input type= "radio" id="medium" name="size">
     <label for="medium">medium</label>
-
+    <br>
     <input type= "radio" id="large" name="size">
     <label for="large">Large</label>
-
-
+    <br><br>
     <button type="submit">Submit</button>
     </form>
 </body>
